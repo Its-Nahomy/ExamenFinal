@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Daily Routines</string>
+    <string name="header_text">My Daily Routines</string>
+    <string name="hint_routine">Enter a routine</string>
+    <string name="add_button">Add Routine</string>
+    <string name="theme_menu">Theme</string>
+    <string name="language_menu">Language</string>
+    <string name="light_theme">Light</string>
+    <string name="dark_theme">Dark</string>
+    <string name="english">English</string>
+    <string name="spanish">Spanish</string>
+    <string name="delete_selected">Delete Selected</string>
+    <string name="delete_all">Delete All</string>
+    <string name="toolbar">barra de herramientas</string>
+    <string name="seleccionar_fecha">Seleccionar Fecha</string>
+</resources>

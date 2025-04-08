@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rutinas Diarias</string>
+    <string name="header_text">Mis Rutinas Diarias</string>
+    <string name="hint_routine">Ingresa una rutina</string>
+    <string name="add_button">Agregar Rutina</string>
+    <string name="delete_selected">Borrar Seleccionado</string>
+    <string name="delete_all">Borrar Todo</string>
+    <string name="theme_menu">Tema</string>
+    <string name="language_menu">Idioma</string>
+    <string name="light_theme">Claro</string>
+    <string name="dark_theme">Oscuro</string>
+    <string name="english">Inglés</string>
+    <string name="spanish">Español</string>
+</resources>

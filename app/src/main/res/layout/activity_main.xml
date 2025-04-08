@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/black"
+        app:titleTextColor="@color/red" />
+
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/header_text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Lista de rutinas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/list_background"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp">
+
+        <ListView
+            android:id="@+id/routinesList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!-- Campo para escribir la rutina -->
+    <EditText
+        android:id="@+id/editTextRoutine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_routine"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/red"
+        android:layout_marginBottom="16dp" />
+
+
+
+    <!-- Contenedor para los botones en horizontal -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <!-- Botón para agregar -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/add_button"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp"
+                app:cornerRadius="25dp"
+                android:backgroundTint="#4CAF50" />
+
+            <!-- Botón para borrar el item seleccionado -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deleteSelectedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delete_selected"
+                android:textSize="15sp"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp"
+                app:cornerRadius="16dp"
+                android:backgroundTint="#FF5722" />
+
+            <!-- Botón para borrar todos los items -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deleteAllButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delete_all"
+                android:textSize="15sp"
+                android:padding="8dp"
+                app:cornerRadius="16dp"
+                android:backgroundTint="#D81B60" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
